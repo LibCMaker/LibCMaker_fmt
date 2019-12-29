@@ -35,3 +35,9 @@
 
   # Configure library.
   add_subdirectory(${lib_SRC_DIR} ${lib_VERSION_BUILD_DIR})
+
+  if(MSVC AND BUILD_SHARED_LIBS)
+    set_target_properties(fmt PROPERTIES
+      WINDOWS_EXPORT_ALL_SYMBOLS ON
+    )
+  endif()

@@ -57,4 +57,9 @@ if(fmt_FOUND AND NOT (TARGET fmt::fmt))
     IMPORTED_LINK_INTERFACE_LANGUAGES "CXX"
     IMPORTED_LOCATION "${fmt_LIBRARY}"
   )
+  if(BUILD_SHARED_LIBS)  # TODO: How to determine if fmt::fmt is shared?
+    set_property(TARGET fmt::fmt APPEND PROPERTY
+      INTERFACE_COMPILE_DEFINITIONS FMT_SHARED
+    )
+  endif()
 endif()

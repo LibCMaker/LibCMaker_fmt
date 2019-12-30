@@ -29,7 +29,7 @@ env:
 build_linux: &build_linux
   stage: Test
   os: linux
-  dist: xenial
+  dist: bionic
 
   env: &build_linux_env
     - cmr_TARGET_OS=linux
@@ -179,7 +179,7 @@ build_windows_msvc_winxp: &build_windows_msvc_winxp
 build_android: &build_android
   stage: Test
   os: linux
-  dist: xenial
+  dist: bionic
   addons:
     apt:
       packages:

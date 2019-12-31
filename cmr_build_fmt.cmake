@@ -41,7 +41,7 @@ list(APPEND CMAKE_MODULE_PATH "${FMT_lib_DIR}/cmake/modules")
 # LibCMaker_<LibName> specific vars and options
 #-----------------------------------------------------------------------
 
-#set(COPY_FMT_CMAKE_BUILD_SCRIPTS ON)
+set(COPY_FMT_CMAKE_BUILD_SCRIPTS ON)
 
 
 #-----------------------------------------------------------------------

@@ -29,7 +29,7 @@
 
 ## +++ Common part of the lib_cmaker_<lib_name> function +++
   set(find_LIB_VARS
-    #COPY_FMT_CMAKE_BUILD_SCRIPTS
+    COPY_FMT_CMAKE_BUILD_SCRIPTS
     FMT_PEDANTIC
     FMT_WERROR
     FMT_DOC

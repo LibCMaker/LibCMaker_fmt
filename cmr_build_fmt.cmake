@@ -29,9 +29,9 @@
 # Lib's name, version, paths
 #-----------------------------------------------------------------------
 
-set(FMT_lib_NAME      "fmt")
-set(FMT_lib_VERSION   "6.1.2")
-set(FMT_lib_DIR       "${CMAKE_CURRENT_LIST_DIR}")
+set(FMT_lib_NAME "fmt")
+set(FMT_lib_VERSION "6.1.2" CACHE STRING "FMT_lib_VERSION")
+set(FMT_lib_DIR "${CMAKE_CURRENT_LIST_DIR}" CACHE PATH "FMT_lib_DIR")
 
 # To use our Find<LibName>.cmake.
 list(APPEND CMAKE_MODULE_PATH "${FMT_lib_DIR}/cmake/modules")
@@ -41,7 +41,7 @@ list(APPEND CMAKE_MODULE_PATH "${FMT_lib_DIR}/cmake/modules")
 # LibCMaker_<LibName> specific vars and options
 #-----------------------------------------------------------------------
 
-set(COPY_FMT_CMAKE_BUILD_SCRIPTS ON)
+option(COPY_FMT_CMAKE_BUILD_SCRIPTS "COPY_FMT_CMAKE_BUILD_SCRIPTS" ON)
 
 
 #-----------------------------------------------------------------------

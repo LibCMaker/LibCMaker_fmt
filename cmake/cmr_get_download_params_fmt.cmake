@@ -27,6 +27,10 @@
     set(arch_file_sha
       "63650f3c39a96371f5810c4e41d6f9b0bb10305064e6faf201cbafe297ea30e8")
   endif()
+  if(version VERSION_EQUAL "8.0.1")
+    set(arch_file_sha
+      "a627a56eab9554fc1e5dd9a623d0768583b3a383ff70a4312ba68f94c9d415bf")
+  endif()
 
   set(base_url "https://github.com/fmtlib/fmt/releases/download")
   set(src_dir_name    "fmt-${version}")
